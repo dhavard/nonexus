@@ -1,0 +1,30 @@
+{
+  "name": "nonexus",
+  "version": "1.0.0",
+  "description": "Darkest Dungeon mod organization tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "havardd",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^16.35.0",
+    "chalk": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.0",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "request": "^2.88.0",
+    "rimraf": "^3.0.0",
+    "simple-git": "^1.126.0",
+    "touch": "^3.1.0",
+    "url": "^0.11.0"
+  }
+}
