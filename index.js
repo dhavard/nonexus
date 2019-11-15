@@ -16,19 +16,14 @@ console.log(
   )
 );
 
-// Upfront validation
-
-if (files.directoryExists('.git')) {
-    console.log(chalk.red('Already a Git repository!'));
-    process.exit();
-  }
-
 // Prompt for input
 
 const run = async () => {
 
     // config
   let prompt = true;
+  let mlist = [];
+
   if(steam.getCollection() && steam.getWorkshop() && steam.getModLoc()) {
     prompt = !(await inquirer.askPrompt()).prompt;
   }
@@ -40,6 +35,8 @@ const run = async () => {
     steam.setCollection(ddlocs.collection);
     steam.setWorkshop(ddlocs.workshop);
     steam.setModLoc(ddlocs.modlocs);
+
+    mlist = await steam.getModList();
   }
 
     // get mod list based on config
@@ -48,7 +45,6 @@ const run = async () => {
     regen = !(await inquirer.askRegenerate()).prompt;
   }
 
-  let mlist = [];
   if(prompt || regen) {
     mlist = await steam.getModList();
   }

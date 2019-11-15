@@ -4,7 +4,7 @@
   "description": "Darkest Dungeon mod organization tool",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "npm install && node ./index.js"
   },
   "author": "havardd",
   "license": "MIT",
