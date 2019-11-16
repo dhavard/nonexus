@@ -60,5 +60,5 @@ Load up darkest dungeon and start up a new game (or continue an old one), and no
 
 # Future considerations
 
-While this approach appears to work on both Mac and Windows, it does effectively create duplicate mod registrations (ones from the workshop that are unsorted and one from the manual install folder which is sorted). In the future, I will probably modify the approach taken here to instead and/or also simply rewrite the save file binary data. Based on my very brief inspection of the mod portion, this should be too difficult but probably would take more than the 2.5 hours of effort I put into this so far... because binary.
+While this approach appears to work on both Mac and Windows, it does effectively create duplicate mod registrations (ones from the workshop that are unsorted and one from the manual install folder which is sorted - something Conexus also appears to do if you are subscribed to the mods and then use it). In the future, I will probably modify the approach taken here to instead and/or also simply rewrite the save file binary data. Based on my very brief inspection of the mod portion, this shouldn't be too difficult but probably would take more than the 2.5 hours of effort I put into this so far... because binary.
 
